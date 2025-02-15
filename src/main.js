@@ -61,8 +61,12 @@ const initData = () => {
   imgDice.classList.add("hidden");
   btnHold.disabled = false;
   btnRoll.disabled = false;
+  
   sectionPlayer0.classList.remove("player--winner");
   sectionPlayer1.classList.remove("player--winner");
+  sectionPlayer1.classList.remove("player--active");
+  sectionPlayer0.classList.add("player--active");
+  
 };
 
 initData();
@@ -102,13 +106,6 @@ function switchPlayer() {
   resetCurrentScore();
   sectionPlayer0.classList.toggle("player--active"); // toggle añade o quita la clase
   sectionPlayer1.classList.toggle("player--active");
-  // if (activePlayer === 0) {
-  //   sectionPlayer0.classList.remove("player--active");
-  //   sectionPlayer1.classList.add("player--active");
-  // } else {
-  //   sectionPlayer1.classList.remove("player--active");
-  //   sectionPlayer0.classList.add("player--active");
-  // }
   activePlayer = activePlayer === 0 ? 1 : 0;
 }
 
