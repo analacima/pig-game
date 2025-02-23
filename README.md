@@ -1,3 +1,6 @@
+# página en gh-pages
+https://analacima.github.io/pig-game/
+
 # proyecto-pig-game
 
 - Fork del repositorio
